@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIn</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <style type="text/css">
+	  	<style type="text/css">
+    	table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+/*tr:nth-child(even){background-color: #f2f2f2}*/
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:hover {background-color:#f5f5f5;}
+
+    </style>
+	  </style>
+</head>
+<body>
+	<p>YOUR Are Admin</p>
+	<a href="logout">Logout</a>
+	<div class="col-lg-13">
+          <div class="card mb-5">
+            <div class="card-header">
+              <i class="fa fa-table"></i> Total Users</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-success">
+		<tr>
+			<th>LOGIN ID</th>
+			<th>FIRST NAME</th>
+			<th>LAST NAME</th>
+		</tr>
+		{% for user in users %}
+			<tr>
+				<td>{{user.email}}</td>
+				<td>{{user.f_name}}</td>
+				<td>{{user.l_name}}</td>
+        <td>
+			</tr>
+		{% endfor %}
+    
+	</table>
+</body>
+</html>
