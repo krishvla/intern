@@ -20,7 +20,7 @@ STATIC_DIR = os.path.join(BASE_DIR,"static")
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '66z&&*n0kjbu^u!15sz&-bwjfdx)%j)v2+a^y(@uqab^_z$xrr'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'intern_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd42riqevrm421q',
-        'USER': 'wqivkgfwfpzejs',
-        'PASSWORD':'b3a847ed13df824308442d50fdb9c0417e729b1d207f02eb36d40b6cbb593bec',
-        'HOST':'ec2-23-23-184-76.compute-1.amazonaws.com',
+        'ENGINE': 'xxxxxxxxxxxxxxxxxxx',
+        'NAME': 'xxxxxxxxxxxxxxxxxxx',
+        'USER': 'xxxxxxxxxxxxxxx',
+        'PASSWORD':'xxxxxxxxxxxxxxxxxxxxxxxx',
+        'HOST':'xxxxxxxxxxxxxxxxxxxxxxxxx',
         'POST':'5432',
     }
 }
@@ -120,8 +120,8 @@ AUTHENTICATION_BACKENDS = (
  'django.contrib.auth.backends.ModelBackend',
 )
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='937735973860-kplfq47di2g0p40gr75i3gtlffafijij.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '3FUvI7jZU-bpVZDC7QVds_VW' 
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='xxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'xxxxxxxxxxxxxxxxx' 
 
 LOGOUT_URL= 'logout'
 LOGIN_URL = 'login'
